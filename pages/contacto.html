@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -21,13 +27,11 @@
       </nav>
     </header>
     <main>
-      <section class="contenido">
-        <h1 class="titulo-home text-secondary">Contacto</h1>
-        <p class="parrafo">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
-          praesentium distinctio officiis iure deleniti quae molestias suscipit,
-          ducimus, natus voluptates nihil aliquid quod sint nesciunt facere
-          numquam? Fugit, a ullam.
+      <section class="contenido contenido-contacto">
+        <h1 class="titulo-home text-secondary">Contactanos</h1>
+        <p class="intro-contacto">
+          ¿Tenés alguna consulta sobre nuestros productos? Completá el
+          formulario y contanos cómo podemos ayudarte.
         </p>
         <h2 class="titulo-productos text-secondary">Dejanos un mensaje</h2>
 
@@ -36,16 +40,55 @@
           action="https://formspree.io/f/mnpnvwzj"
           method="POST"
         >
-          <label>
-            Escribe tu email:
-            <input type="email" name="email" />
-          </label>
-          <label>
-            Tu mensaje:
-            <textarea name="message"></textarea>
-          </label>
-          <!-- your other form fields go here -->
-          <button type="submit">Send</button>
+          <div class="campo-formulario">
+            <label for="nombre"
+              >Tu nombre <span aria-hidden="true">*</span></label
+            >
+            <input
+              id="nombre"
+              name="name"
+              type="text"
+              autocomplete="name"
+              placeholder="Por ejemplo, María López"
+              required
+            />
+          </div>
+
+          <div class="campo-formulario">
+            <label for="email"
+              >Correo electrónico <span aria-hidden="true">*</span></label
+            >
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="nombre@ejemplo.com"
+              required
+            />
+            <small class="ayuda-campo"
+              >Usaremos este correo para responder tu consulta.</small
+            >
+          </div>
+
+          <div class="campo-formulario">
+            <label for="mensaje"
+              >¿En qué podemos ayudarte?
+              <span aria-hidden="true">*</span></label
+            >
+            <textarea
+              id="mensaje"
+              name="message"
+              rows="6"
+              placeholder="Escribí tu mensaje acá..."
+              required
+            ></textarea>
+          </div>
+
+          <button class="btn btn-contacto" type="submit">Enviar mensaje</button>
+          <p class="nota-formulario">
+            <span aria-hidden="true">*</span> Campos obligatorios
+          </p>
         </form>
       </section>
     </main>
