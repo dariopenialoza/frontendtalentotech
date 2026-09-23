@@ -11,8 +11,8 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
-  background-color: #6e5a8e;
-  color: #fff7fb;
+  background-color: #fff8e8;
+  color: #26332a;
 
   display: flex;
   flex-direction: column;
@@ -56,17 +56,49 @@ h2 {
 
 header,
 footer {
-  background-color: #5c4a7a;
-  color: #fff7fb;
+  background-color: #205f38;
+  color: #ffffff;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.titulo-home,
+.titulo-productos,
+.text-secondary {
+  color: #205f38;
+}
+
 header {
   position: sticky;
   top: 0;
+  z-index: 1000;
+  height: 7rem;
+  padding: 0 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.header-nav a:hover,
+.header-nav a:focus-visible {
+  color: #ffe3a3;
+}
+
+.logo {
+  padding: 0;
+  line-height: 0;
+}
+
+.logo img {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+}
+
+.header-nav ul li a {
+  padding: 0 1rem;
 }
 
 footer {
@@ -89,8 +121,16 @@ ul {
   justify-content: space-between;
 }
 
-img {
+nav img {
+  width: 3rem;
+}
+
+.producto img {
   width: 30rem;
+}
+
+.logo img {
+  width: 6rem;
 }
 
 /* Contenedor principal: activa flex */
@@ -126,10 +166,39 @@ img {
 /* Cada tarjeta */
 .producto {
   flex: 1 1 200px; /*puede crecer (1), puede achicarse (1), base de 200px */
-  background: #1d1a20;
-  color: #f7bb2b;
+  background-color: #ffffff;
+  color: #26332a;
+  border: 1px solid #e7e1d5;
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.4rem 1.2rem rgb(38 51 42 / 10%);
   text-align: center;
   font-size: 1.8rem;
+}
+
+.descripcion-producto {
+  color: #6b756d;
+}
+
+.precio-producto {
+  color: #205f38;
+  font-weight: 700;
+}
+
+.bg-secondary {
+  background-color: #205f38;
+}
+
+.text-dark {
+  color: #ffffff;
+}
+
+.btn {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: #184b2c;
 }

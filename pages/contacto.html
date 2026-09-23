@@ -9,20 +9,54 @@
   <body>
     <header>
       <div class="div-logo">
-        <a href="./index.html">
-          <img src="./img/logo.png" alt="Tienda de Mascotas" />
+        <a class="logo" href="../index.html">
+          <img src="../img/logo.png" alt="Tienda de Mascotas" />
         </a>
       </div>
       <nav class="header-nav">
         <ul>
-          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="../index.html">Inicio</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="contenido">
+        <h1 class="titulo-home text-secondary">Contacto</h1>
+        <p class="parrafo">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+          praesentium distinctio officiis iure deleniti quae molestias suscipit,
+          ducimus, natus voluptates nihil aliquid quod sint nesciunt facere
+          numquam? Fugit, a ullam.
+        </p>
+        <h2 class="titulo-productos text-secondary">Dejanos un mensaje</h2>
+
+        <form
+          class="form-contacto"
+          action="https://formspree.io/f/mnpnvwzj"
+          method="POST"
+        >
+          <label>
+            Escribe tu email:
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Tu mensaje:
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
     <footer>
-      <p>Esto es el pie de página</p>
+      <p>Sitio realizado por Dario para Talento Tech</p>
+      <nav class="footer-list">
+        <ul>
+          <li><img src="../img/whatsapp.png" alt="logo-whatsapp" /></li>
+          <li><img src="../img/social.png" alt="logo-instragram" /></li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
