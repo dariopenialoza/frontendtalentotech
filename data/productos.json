@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "nombre": "Alimento para gallinas",
+    "precio": 1234,
+    "img": "img/alimento-gallinas-400x400.png"
+  },
+  {
+    "id": "2",
+    "nombre": "Alimento para gatos",
+    "precio": 4556,
+    "img": "img/alimento-gatos-400x400.png"
+  },
+  {
+    "id": "3",
+    "nombre": "Alimento para peces",
+    "precio": 1500,
+    "img": "img/alimento-peces-400x400.png"
+  },
+  {
+    "id": "4",
+    "nombre": "Alimento para perros",
+    "precio": 2500,
+    "img": "img/alimento-perros-400x400.png"
+  }
+]

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Carrito Tienda de Mascotas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="div-logo">
+        <a class="logo" href="../index.html">
+          <img src="../img/logo.png" alt="Tienda de Mascotas" />
+        </a>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li>
+            <!--👉 Agregar un link al carrito, con un ID para el contador -->
+            <a href="./carrito.html" class="carrito-icono"
+              >🛒<span id="contador-carrito"></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contenido">
+        <h1 class="titulo-home text-secondary">Carrito de compras</h1>
+        <section id="contenedor-carrito" class="contenedor-tarjetas">
+          <!-- Productos del carrito -->
+        </section>
+        <section>
+          <div id="acciones-carrito" class="acciones-carrito">
+            <!-- Botones de eliminar y finalizar compra se agregan desde JS -->
+          </div>
+        </section>
+        <section id="resumen-carrito">
+          <!-- Aca ira el resumen del carrito -->
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>Sitio realizado por Dario para Talento Tech</p>
+      <nav class="footer-list">
+        <ul>
+          <li><img src="../img/whatsapp.png" alt="logo-whatsapp" /></li>
+          <li><img src="../img/social.png" alt="logo-instragram" /></li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- Sweet Alert si lo quieren usar -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--👉 Agregar type module y enlace al index.js -->
+    <script src="../js/carrito.js" type="module"></script>
+  </body>
+</html>
